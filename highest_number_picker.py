@@ -21,3 +21,5 @@ if number_5 > highest_number:
     highest_number = number_5
 #print the highest variable
 print(highest_number)
+
+#negative number problem
