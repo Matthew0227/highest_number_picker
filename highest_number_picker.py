@@ -7,10 +7,8 @@ number_4 = int(input("give the fourth number: "))
 number_5 = int(input("give the fifth number: "))
 
 #make a variable that holds the highest number
-highest_number = 0
+highest_number = number_1
 #compare number 1 - 5 with highest number variable
-if number_1 > highest_number:
-    highest_number = number_1
 if number_2 > highest_number:
     highest_number = number_2
 if number_3 > highest_number:
@@ -22,4 +20,4 @@ if number_5 > highest_number:
 #print the highest variable
 print(highest_number)
 
-#negative number problem
+#fixing it by assigning the number_1 as the highest and removing the if statement that compares highest variable with number 
