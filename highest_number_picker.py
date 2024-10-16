@@ -20,4 +20,4 @@ if number_5 > highest_number:
 #print the highest variable
 print(highest_number)
 
-#fixing it by assigning the number_1 as the highest and removing the if statement that compares highest variable with number 
+#error when user inputting other things than integers
