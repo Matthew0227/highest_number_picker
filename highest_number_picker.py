@@ -43,9 +43,20 @@ while True:
 
 #define a function that will determine the highest number or numbers
 def highest_picker(highest_number_placeholder, num1_placeholder, num2_placeholder, num3_placeholder, num4_placeholder, num5_placeholder):
-    if number_1 >= number_2:
-        highest_number_placeholder.append(number_1)
-        if number_2
+
+
+#compare num1 to num2, 3, 4, 5
+#make a temp list that holds the highest value
+#compare the highest value to num1,2,3,4,5 to check if there's equal value
+#push the equal value to the temp list
+ if number_1 > number_2:
+    if number_1 > number_2:
+        if number_1 > number_3:
+            if number_1 > number_4:
+                if number_1 > number_5:
+                    highest_number_placeholder.append(number_1)
+
+        
 
 #make a variable that will hold the highest numbers
 highest_number = []
