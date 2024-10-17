@@ -85,4 +85,4 @@ if len(highest_number) == 1:
 if len(highest_number) >= 2:
     print(f"the highest number is {highest_num_display()}, appearing {len(highest_number)} times.")
 
-#changing the function to check the amount of highest value in to function that displays the highest value once
+#problem with input of user as it only accept non negative numbers
