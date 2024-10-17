@@ -1,45 +1,19 @@
 #get 5 numbers from the user
 print("Give 5 numbers and I'll display the highest")
 
-while True:
-    number_1 = input("give the first number: ")
-    if number_1.isdigit():
-        number_1 = int(number_1)
-        break
-    else:
+def input_number(ask_user):
+ while True:
+    try:
+        return int(input(ask_user))
+    except ValueError:
         print("please put a number")
+
+number_1 = input_number("give the first number: ")
+number_2 = input_number("give the second number: ")
+number_3 = input_number("give the third number: ")
+number_4 = input_number("give the fourth number: ")
+number_5 = input_number("give the fifth number: ")
     
-while True:
-    number_2 = input("give the second number: ")
-    if number_2.isdigit():
-        number_2 = int(number_2)
-        break
-    else:
-        print("please put a number")
-
-while True:
-    number_3 = input("give the third number: ")
-    if number_3.isdigit():
-        number_3 = int(number_3)
-        break
-    else:
-        print("please put a number")
-        
-while True:
-    number_4 = input("give the fourth number: ")
-    if number_4.isdigit():
-        number_4 = int(number_4)
-        break
-    else:
-        print("please put a number")
-
-while True:
-    number_5 = input("give the fifth number: ")
-    if number_5.isdigit():
-        number_5 = int(number_5)
-        break
-    else:
-        print("please put a number")
 
 #define a function that will determine the highest number or numbers
 def highest_picker(highest_number_placeholder, num1_placeholder, num2_placeholder, num3_placeholder, num4_placeholder, num5_placeholder):
@@ -81,8 +55,8 @@ highest_number = []
 highest_num = highest_picker(highest_number, number_1, number_2, number_3, number_4, number_5)
 
 if len(highest_number) == 1:
-    print("the highest number is", highest_number)
+    print("the highest number is", {highest_number})
 if len(highest_number) >= 2:
     print(f"the highest number is {highest_num_display()}, appearing {len(highest_number)} times.")
 
-#problem with input of user as it only accept non negative numbers
+#using try block to ask user to input a number until they do
