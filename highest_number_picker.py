@@ -41,16 +41,13 @@ while True:
     else:
         print("please put a number")
 
-#make a variable that holds the highest number
-highest_number = number_1
-#compare number 1 - 5 with highest number variable
-if number_2 > highest_number:
-    highest_number = number_2
-if number_3 > highest_number:
-    highest_number = number_3
-if number_4 > highest_number:
-    highest_number = number_4
-if number_5 > highest_number:
-    highest_number = number_5
-#print the highest variable
-print(highest_number)
+#make a variable that will hold the highest numbers
+highest_numbers = []
+#define a function that will determine the highest number or numbers
+#use if statement function to compare two numbers and push the higher or equal number to the highest_numbers list
+
+#make a function if there is two or more equal numbers it will print the number and the amount of equal numbers
+
+#print the highest_number
+
+#the code will display the highest number even if there is two or more same values
