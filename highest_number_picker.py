@@ -70,11 +70,19 @@ def highest_picker(highest_number_placeholder, num1_placeholder, num2_placeholde
                 if number_5 >= number_4:
                     highest_number_placeholder.append(number_5)
 
-#making a function to check how many numbers have the same highest value
-
+#this function returns the value of the highest number
+def highest_num_display():
+    if len(highest_number) >= 2:
+        return highest_number[0]
 
 #make a variable that will hold the highest numbers
 highest_number = []
 
 highest_num = highest_picker(highest_number, number_1, number_2, number_3, number_4, number_5)
-print(highest_number)
+
+if len(highest_number) == 1:
+    print("the highest number is", highest_number)
+if len(highest_number) >= 2:
+    print(f"the highest number is {highest_num_display()}, appearing {len(highest_number)} times.")
+
+#changing the function to check the amount of highest value in to function that displays the highest value once
