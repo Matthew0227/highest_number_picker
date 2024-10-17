@@ -41,20 +41,23 @@ while True:
     else:
         print("please put a number")
 
-#make a variable that will hold the highest numbers
-highest_number = []
 #define a function that will determine the highest number or numbers
 def highest_picker(highest_number_placeholder, num1_placeholder, num2_placeholder, num3_placeholder, num4_placeholder, num5_placeholder):
     if number_1 >= number_2:
-        temp_high_num_1 = number_1
-        highest_number_placeholder.append(temp_high_num_1)
+        highest_number_placeholder.append(number_1)
+        if number_2
 
-highest_num = highest_picker(highest_number, number_1, number_2, number_3, number_4, number_5)
-print(highest_num)
+#make a variable that will hold the highest numbers
+highest_number = []
+
 #use if statement function to compare two numbers and push the higher or equal number to the highest_numbers list
 
 #make a function if there is two or more equal numbers it will print the number and the amount of equal numbers
 
 #print the highest_number
 
+highest_num = highest_picker(highest_number, number_1, number_2, number_3, number_4, number_5)
+print(highest_number)
 #the code will display the highest number even if there is two or more same values
+
+#Fixed by mistakingly printing the function
