@@ -46,30 +46,30 @@ def highest_picker(highest_number_placeholder, num1_placeholder, num2_placeholde
 
 
 #compare num1 to num2, 3, 4, 5
-  if number_1 > number_2:
-        if number_1 > number_3:
-            if number_1 > number_4:
-                if number_1 > number_5:
+  if number_1 >= number_2:
+        if number_1 >= number_3:
+            if number_1 >= number_4:
+                if number_1 >= number_5:
                     highest_number_placeholder.append(number_1)
-  if number_2 > number_1:
-        if number_2 > number_3:
-            if number_2 > number_4:
-                if number_2 > number_5:
+  if number_2 >= number_1:
+        if number_2 >= number_3:
+            if number_2 >= number_4:
+                if number_2 >= number_5:
                     highest_number_placeholder.append(number_2)
-  if number_3 > number_1:
-        if number_3 > number_2:
-            if number_3 > number_4:
-                if number_3 > number_5:
+  if number_3 >= number_1:
+        if number_3 >= number_2:
+            if number_3 >= number_4:
+                if number_3 >= number_5:
                     highest_number_placeholder.append(number_3)
-  if number_4 > number_1:
-        if number_4 > number_2:
-            if number_4 > number_3:
-                if number_4 > number_5:
+  if number_4 >= number_1:
+        if number_4 >= number_2:
+            if number_4 >= number_3:
+                if number_4 >= number_5:
                     highest_number_placeholder.append(number_4)
-  if number_5 > number_1:
-        if number_5 > number_2:
-            if number_5 > number_3:
-                if number_5 > number_4:
+  if number_5 >= number_1:
+        if number_5 >= number_2:
+            if number_5 >= number_3:
+                if number_5 >= number_4:
                     highest_number_placeholder.append(number_5)
 
 #compare the highest value to num1,2,3,4,5 to check if there's equal value
@@ -88,4 +88,8 @@ highest_num = highest_picker(highest_number, number_1, number_2, number_3, numbe
 print(highest_number)
 #the code will display the highest number even if there is two or more same values
 
-#removing the temp variable as it seems not to be necessary
+#encountering an error when same value is given by the user
+#fixing it by using greater than symbol
+# discovering while running the code multiple times that the function can 
+# push values that are equal so another if statement for checking if the 
+# highest value have an equal value isn't necessary
